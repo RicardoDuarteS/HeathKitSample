@@ -20,9 +20,9 @@ extension ViewController {
             DispatchQueue.main.async {
                 self.lblUserAge.text = "\(birthDate.year ?? 0)"
                 if sex.rawValue == 1 {
-                    self.lblUserGender.text = "Male"
-                } else {
                     self.lblUserGender.text = "Fem"
+                } else {
+                    self.lblUserGender.text = "Male"
                 }
                 self.lblUserBloodType.text = self.convertBloodType(bloodType: bloodType.rawValue)
             }

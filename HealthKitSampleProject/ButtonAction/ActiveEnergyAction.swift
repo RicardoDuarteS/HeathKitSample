@@ -28,12 +28,12 @@ extension ViewController {
                 return
             }
             let firstSample = quantitySamples[0...10]
-            print("First Sample: \(firstSample)")
+//            print("First Sample: \(firstSample)")
             let total = quantitySamples.reduce(0.0) { $0 + $1.quantity.doubleValue(for: HKUnit.kilocalorie()) }
-                                            print("Total kcal: \(total)")
+//            print("Total kcal: \(total)")
             DispatchQueue.main.async {
-                                                self.lblEnergyBurned.text = String(format: "%.2f", total, "Kcal")
-                                            }
+                self.lblEnergyBurned.text = String(format: "%.2f", total, "Kcal")
+            }
         }
         HKHealthStore().execute(energyQuery)
     }

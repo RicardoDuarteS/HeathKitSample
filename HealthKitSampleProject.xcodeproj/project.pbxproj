@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		421AF2872458806200C4C2BC /* ActiveEnergyAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421AF2862458806200C4C2BC /* ActiveEnergyAction.swift */; };
 		421AF2892458A53A00C4C2BC /* UserCharacteristicsAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421AF2882458A53A00C4C2BC /* UserCharacteristicsAction.swift */; };
+		421AF28B24599B4400C4C2BC /* SleepTimeAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421AF28A24599B4400C4C2BC /* SleepTimeAction.swift */; };
 		423E845524572DE90071604B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423E845424572DE90071604B /* AppDelegate.swift */; };
 		423E845724572DE90071604B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423E845624572DE90071604B /* SceneDelegate.swift */; };
 		423E845924572DE90071604B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423E845824572DE90071604B /* ViewController.swift */; };
@@ -43,6 +44,7 @@
 /* Begin PBXFileReference section */
 		421AF2862458806200C4C2BC /* ActiveEnergyAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveEnergyAction.swift; sourceTree = "<group>"; };
 		421AF2882458A53A00C4C2BC /* UserCharacteristicsAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCharacteristicsAction.swift; sourceTree = "<group>"; };
+		421AF28A24599B4400C4C2BC /* SleepTimeAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepTimeAction.swift; sourceTree = "<group>"; };
 		423E845124572DE90071604B /* HealthKitSampleProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthKitSampleProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		423E845424572DE90071604B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		423E845624572DE90071604B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 				423E8488245746120071604B /* HeartRateAction.swift */,
 				421AF2862458806200C4C2BC /* ActiveEnergyAction.swift */,
 				421AF2882458A53A00C4C2BC /* UserCharacteristicsAction.swift */,
+				421AF28A24599B4400C4C2BC /* SleepTimeAction.swift */,
 			);
 			path = ButtonAction;
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 				423E845724572DE90071604B /* SceneDelegate.swift in Sources */,
 				421AF2872458806200C4C2BC /* ActiveEnergyAction.swift in Sources */,
 				423E848F245762EC0071604B /* HealthAuthorization.swift in Sources */,
+				421AF28B24599B4400C4C2BC /* SleepTimeAction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

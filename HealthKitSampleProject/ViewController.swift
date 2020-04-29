@@ -11,24 +11,15 @@ import HealthKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var btnRequestHKAuth: UIButton!
-    @IBOutlet weak var btnGetHearthRare: UIButton!
-    @IBOutlet weak var btnEnergyBurned: UIButton!
-    @IBOutlet weak var btnExerciseTime: UIButton!
-    @IBOutlet weak var btnSleepAverage: UIButton!
-    @IBOutlet weak var btnGetCharacteristics: UIButton!
-
-
     @IBOutlet weak var lblHealthKitStatus: UILabel!
     @IBOutlet weak var lblHeartRate: UILabel!
     @IBOutlet weak var lblEnergyBurned: UILabel!
     @IBOutlet weak var lblExerciseTime: UILabel!
-    @IBOutlet weak var lblSleepAverage: UILabel!
+    @IBOutlet weak var lblStartSleepTime: UILabel!
+    @IBOutlet weak var lblEndSleepTime: UILabel!
     @IBOutlet weak var lblUserAge: UILabel!
     @IBOutlet weak var lblUserGender: UILabel!
     @IBOutlet weak var lblUserBloodType: UILabel!
-    
-
 
     let healthStore = HKHealthStore()
     var heartRateQuery: HKQuery!
@@ -41,14 +32,9 @@ class ViewController: UIViewController {
 
     @IBAction func HealthKitAuthorizationClicked(_ sender: UIButton) {
         requestHealthKitPermission { (_) in }
-    }
-
-    func getHeartRate() {
-        
-    }
-    
+    }    
     @IBAction func GetHeartRateClicked(_ sender: UIButton) {
-//        subscribeToHeartBeatChanges()
+        self.readHeartRate()
     }
     @IBAction func GetEnergyBurnedClicked(_ sender: UIButton) {
         self.readEnergyBurned()
@@ -56,6 +42,7 @@ class ViewController: UIViewController {
     @IBAction func GetExerciseTimeClicked(_ sender: UIButton) {
     }
     @IBAction func GetSleepAverageClicked(_ sender: UIButton) {
+        self.readSleepTime()
     }
     @IBAction func GetUserCharacteristicsClicked(_ sender: UIButton) {
         readCharacteristicsData()
