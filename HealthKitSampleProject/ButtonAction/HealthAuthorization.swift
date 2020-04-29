@@ -17,19 +17,20 @@ extension ViewController {
     func requestHealthKitPermission( completion: @escaping AuthorizationCompletion) {
 
         guard let heartRate = HKObjectType.quantityType(forIdentifier: .heartRate),
-              let activeEnergyBurned = HKObjectType.quantityType(forIdentifier: .activeEnergyBurned),
-              let sleepAnalysis = HKObjectType.categoryType(forIdentifier: .sleepAnalysis),
-              let sex = HKObjectType.characteristicType(forIdentifier: .biologicalSex),
-              let age = HKObjectType.characteristicType(forIdentifier: .dateOfBirth),
-              let bloodType = HKObjectType.characteristicType(forIdentifier: .bloodType)
+            let activeEnergyBurned = HKObjectType.quantityType(forIdentifier: .activeEnergyBurned),
+            let sleepAnalysis = HKObjectType.categoryType(forIdentifier: .sleepAnalysis),
+            let exerciseTime = HKObjectType.quantityType(forIdentifier: .appleExerciseTime),
+            let sex = HKObjectType.characteristicType(forIdentifier: .biologicalSex),
+            let age = HKObjectType.characteristicType(forIdentifier: .dateOfBirth),
+            let bloodType = HKObjectType.characteristicType(forIdentifier: .bloodType)
             else {
                 return
             }
 
-
         let sampleType: Set<HKObjectType> = [heartRate,
                                             activeEnergyBurned,
                                             sleepAnalysis,
+                                            exerciseTime,
                                             sex,
                                             age,
                                             bloodType]

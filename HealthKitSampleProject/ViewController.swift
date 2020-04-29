@@ -40,6 +40,7 @@ class ViewController: UIViewController {
         self.readEnergyBurned()
     }
     @IBAction func GetExerciseTimeClicked(_ sender: UIButton) {
+        self.readExerciseTime()
     }
     @IBAction func GetSleepAverageClicked(_ sender: UIButton) {
         self.readSleepTime()
